@@ -1,9 +1,23 @@
 
 public class Animal {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Welcome to Great Learning!");
-	}
+		static int count;
+		
+		String name;
+		String color;
+		
+		void setName(String name) {
+			this.name = name;
+		}
+		
+		String getName() {
+			return name;
+		}
+		
+		void updateCount() {
+			count++;
+			System.out.println(count);
+		}
+
 
 }
