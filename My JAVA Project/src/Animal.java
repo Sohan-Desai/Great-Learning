@@ -19,5 +19,4 @@ public class Animal {
 			System.out.println(count);
 		}
 
-
 }
