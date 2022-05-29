@@ -22,6 +22,7 @@ public class ArrayTest {
 			Arr [i] = in.nextInt();
 			size++;
 		}
+		in.close();
 	}
 	
 	void ExpandArray() {

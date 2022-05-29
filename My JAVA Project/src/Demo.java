@@ -19,7 +19,7 @@ public class Demo {
 				}
 			}
 		}
-		
+		sc.close();
 		System.out.println("Sorted array,");
 		for(j=0; j<limit; j++)
 			System.out.print("\t" +Array[j]);

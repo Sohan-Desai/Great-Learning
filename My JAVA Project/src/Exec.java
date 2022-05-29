@@ -15,6 +15,7 @@ public class Exec {
 		System.out.println("4. Divison");
 		int choice=sc.nextInt();
 		int result=0;
+		sc.close();
 		switch(choice)
 		{
 		case 1: result=num1+num2; System.out.println("Result = " +result); break;
