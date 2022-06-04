@@ -16,13 +16,13 @@ public class ArrayTest {
 		int last, i;
 		System.out.println("How many Elements to enter?");
 		last = in.nextInt() +size;
+		System.out.println("Array is ready!\n" +"Enter " +(last-size) +" elements :");
 		for (i=size; i<last; i++) {
 			if (size==capacity)
 				ExpandArray();
 			Arr [i] = in.nextInt();
 			size++;
 		}
-		in.close();
 	}
 	
 	void ExpandArray() {

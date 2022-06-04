@@ -1,34 +1,23 @@
 import java.util.Scanner;
 
 public class Exec {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the first value :");
-		int num1=sc.nextInt();
-		System.out.println("Enter the second value :");
-		int num2=sc.nextInt();
-		System.out.println("Kindly choose from following options :");
-		System.out.println("1. Addition");
-		System.out.println("2. Subtraction");
-		System.out.println("3. Multiplication");
-		System.out.println("4. Divison");
-		int choice=sc.nextInt();
-		int result=0;
-		sc.close();
-		switch(choice)
-		{
-		case 1: result=num1+num2; System.out.println("Result = " +result); break;
-		case 2: result=num1-num2; System.out.println("Result = " +result); break;
-		case 3: result=num1*num2; System.out.println("Result = " +result); break;
-		case 4: 
-			if (num2==0)
-				System.out.println("Cannot divide by 0");
-			else 
-				result=num1/num2; System.out.println("Result = " +result);
-				break;
-		default: System.out.println("Invalid choice!");
-		}
+	public int findArea(int length, int width) {
+		int area = length*width;
+		return area;
 	}
 	
+	public void findArea(double length, double width, double height) {
+		System.out.println("Total surface area of the given cuboid is " +(2*(length*width + length*height + width*height)));
+	}
+	
+	void car() {
+		System.out.println("I am class Exec");
+	}
+	
+	public static void main(String[] args) {
+		Exec polymorphism = new Exec();
+		int area = polymorphism.findArea(5,9);
+		System.out.println("Area of rectangle is " +area);
+		polymorphism.findArea(3.5,1.27,6.84);
+	}
 }
