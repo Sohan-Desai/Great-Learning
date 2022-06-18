@@ -8,8 +8,10 @@ public class ThrowDemo {
 			int a = 100/0;
 			System.out.println(a);
 		} catch(ArithmeticException ae) {
-			throw new ArithmeticException("my custom message! " +ae);
+			//throw new ArithmeticException("my custom message! " +ae);
+			throw new MyException("My custom exception ");
 		}
+		
 	}
 
 }
